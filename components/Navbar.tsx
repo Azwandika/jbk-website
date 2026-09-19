@@ -31,10 +31,17 @@ export default function Navbar(){
         ? 'bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-8px_rgba(0,0,0,0.1)] border-b border-gray-100'
         : 'bg-white/60 backdrop-blur-sm'
     }`}>
-      <div className="container flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="transition-transform duration-300 group-hover:scale-105">
-            <Image src="/images/logo_baru.png" alt="SJB Kontraktor" width={170} height={52} priority className="object-contain" />
+      <div className="container flex items-center justify-between h-16 md:h-20">
+        <Link href="/" className="flex items-center gap-3 group min-w-0 shrink-0">
+          <div className="transition-transform duration-300 group-hover:scale-105 w-[110px] h-10 sm:w-[130px] sm:h-11 md:w-[150px] md:h-12 lg:w-[170px] lg:h-14 overflow-hidden rounded-lg bg-white/40">
+            <Image
+              src="/images/logo_baru.png"
+              alt="SJB Kontraktor"
+              fill
+              priority
+              sizes="(max-width: 768px) 130px, 170px"
+              className="object-cover object-center -my-[8%] scale-[1.18]"
+            />
           </div>
         </Link>
 

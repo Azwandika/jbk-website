@@ -47,7 +47,15 @@ export default function Footer(){
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           <div className="lg:col-span-2">
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 backdrop-blur-sm">
-              <Image src="/images/logo_baru.png" alt="SJB Kontraktor" width={180} height={56} className="object-contain brightness-0 invert drop-shadow-lg" />
+              <div className="relative w-[150px] h-12 sm:w-[170px] sm:h-14 md:w-[190px] md:h-16 overflow-hidden rounded-xl bg-white/10">
+                <Image
+                  src="/images/logo_baru.png"
+                  alt="SJB Kontraktor"
+                  fill
+                  sizes="(max-width: 768px) 170px, 190px"
+                  className="object-cover object-center -my-[8%] scale-[1.18] brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.15)]"
+                />
+              </div>
               <p className="mt-4 text-gray-300 leading-relaxed max-w-md">
                 <strong>Sulistyo Jaya Baru (SJB) Kontraktor</strong> — perusahaan kontraktor terpercaya yang spesialis dalam
                 pembangunan rumah tinggal, renovasi, dan pengawasan proyek di wilayah Colomadu, Karanganyar, Solo dan sekitarnya.

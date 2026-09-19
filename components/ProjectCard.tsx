@@ -47,7 +47,7 @@ export default function ProjectCard({ title, location, image, progress, date, de
       className="group rounded-2xl bg-white shadow-card card-lift overflow-hidden border border-gray-100"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="relative h-56 md:h-64 overflow-hidden">
+      <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
         {!imgLoaded && (
           <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 animate-shimmer" style={{ backgroundSize: '200% 100%' }}></div>
         )}
@@ -55,22 +55,22 @@ export default function ProjectCard({ title, location, image, progress, date, de
           src={image}
           alt={title}
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className={`object-cover transition-all duration-700 group-hover:scale-110 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImgLoaded(true)}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-        <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
-          <div className="text-white drop-shadow-md">
-            <div className="flex items-center gap-1.5 text-xs font-semibold">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
+        <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 flex justify-between items-end gap-2">
+          <div className="text-white drop-shadow-md min-w-0 flex-1">
+            <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 sm:w-[14px] sm:h-[14px]">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-              <span className="truncate max-w-[180px]">{location}</span>
+              <span className="truncate max-w-[160px] sm:max-w-[200px]">{location}</span>
             </div>
           </div>
-          <div className="bg-white/95 backdrop-blur-sm text-jbk-black px-3 py-1 rounded-full text-xs font-bold shadow-md">
+          <div className="bg-white/95 backdrop-blur-sm text-jbk-black px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold shadow-md shrink-0">
             {progress}%
           </div>
         </div>

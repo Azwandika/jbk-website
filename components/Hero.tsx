@@ -74,40 +74,42 @@ export default function Hero(){
           </RevealOnScroll>
 
           <RevealOnScroll variant="right" delay={300}>
-            <div className="relative animate-float">
-              <div className="absolute -inset-4 bg-gradient-to-br from-jbk-red/15 to-transparent rounded-[2.5rem] blur-2xl"></div>
-              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-20px_rgba(227,6,19,0.3)] ring-1 ring-white/60">
-                <Image
-                  src="/images/project-hook-2lt.svg"
-                  alt="Proyek Rumah JBK"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover"
-                  priority
-                />
-              </div>
+            <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+              <div className="relative animate-float">
+                <div className="absolute -inset-4 bg-gradient-to-br from-jbk-red/15 to-transparent rounded-[2.5rem] blur-2xl pointer-events-none"></div>
+                <div className="relative rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-20px_rgba(227,6,19,0.3)] ring-1 ring-white/60">
+                  <Image
+                    src="/images/project-hook-2lt.svg"
+                    alt="Proyek Rumah JBK"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                </div>
 
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-card-hover p-4 flex items-center gap-3 animate-[float_5s_ease-in-out_infinite_0.5s]">
-                <div className="w-12 h-12 rounded-xl bg-jbk-gradient flex items-center justify-center text-white">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
-                  </svg>
+                <div className="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 bg-white rounded-2xl shadow-card-hover p-2 sm:p-4 flex items-center gap-2 sm:gap-3 animate-[float_5s_ease-in-out_infinite_0.5s] max-w-[calc(100%-1rem)]">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-jbk-gradient flex items-center justify-center text-white shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-[22px] sm:h-[22px]">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-xs sm:text-sm font-bold text-jbk-black truncate">Terpercaya</div>
+                    <div className="text-[10px] sm:text-xs text-gray-500 truncate">Kualitas Terjamin</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-sm font-bold text-jbk-black">Terpercaya</div>
-                  <div className="text-xs text-gray-500">Kualitas Terjamin</div>
-                </div>
-              </div>
 
-              <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-card-hover p-4 flex items-center gap-3 animate-[float_5s_ease-in-out_infinite_1s]">
-                <div className="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center text-white">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-jbk-black">Tepat Waktu</div>
-                  <div className="text-xs text-gray-500">Sesuai Deadline</div>
+                <div className="absolute -top-3 sm:-top-4 -right-2 sm:-right-4 bg-white rounded-2xl shadow-card-hover p-2 sm:p-4 flex items-center gap-2 sm:gap-3 animate-[float_5s_ease-in-out_infinite_1s] max-w-[calc(100%-1rem)]">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-green-500 flex items-center justify-center text-white shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-[22px] sm:h-[22px]">
+                      <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-xs sm:text-sm font-bold text-jbk-black truncate">Tepat Waktu</div>
+                    <div className="text-[10px] sm:text-xs text-gray-500 truncate">Sesuai Deadline</div>
+                  </div>
                 </div>
               </div>
             </div>
