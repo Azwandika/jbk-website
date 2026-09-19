@@ -31,21 +31,22 @@ export default function Navbar(){
         ? 'bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-8px_rgba(0,0,0,0.1)] border-b border-gray-100'
         : 'bg-white/60 backdrop-blur-sm'
     }`}>
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link href="/" className="flex items-center gap-3 group min-w-0 shrink-0">
-          <div className="transition-transform duration-300 group-hover:scale-105 w-[130px] h-14 sm:w-[150px] sm:h-16 md:w-[170px] md:h-[72px] lg:w-[190px] lg:h-20 overflow-hidden rounded-lg">
+      <div className="container flex items-center justify-between h-16 md:h-20 gap-3">
+        <Link href="/" className="flex items-center justify-start gap-0 group shrink-0 relative z-10">
+          <div className="transition-transform duration-300 group-hover:scale-105 relative flex items-center justify-start">
             <Image
               src="/images/logo_baru.png"
               alt="SJB Kontraktor"
-              fill
+              width={220}
+              height={72}
               priority
-              sizes="(max-width: 768px) 150px, 190px"
-              className="object-contain object-center p-1"
+              sizes="(max-width: 768px) 140px, 200px"
+              className="w-[120px] h-auto sm:w-[150px] md:w-[180px] lg:w-[200px] max-h-12 sm:max-h-14 md:max-h-16 lg:max-h-[72px] object-contain object-left"
             />
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center justify-center md:justify-end gap-7 xl:gap-8 flex-1 min-w-0">
           <Link href="/" className={`nav-link ${isActive('/') ? 'text-jbk-red' : ''}`}>
             Beranda
           </Link>
