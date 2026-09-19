@@ -47,13 +47,13 @@ export default function Footer(){
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           <div className="lg:col-span-2">
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 backdrop-blur-sm">
-              <div className="relative w-[150px] h-12 sm:w-[170px] sm:h-14 md:w-[190px] md:h-16 overflow-hidden rounded-xl bg-white/10">
+              <div className="relative w-[170px] h-16 sm:w-[190px] sm:h-[72px] md:w-[210px] md:h-20 overflow-hidden rounded-xl bg-white/10">
                 <Image
                   src="/images/logo_baru.png"
                   alt="SJB Kontraktor"
                   fill
-                  sizes="(max-width: 768px) 170px, 190px"
-                  className="object-cover object-center -my-[8%] scale-[1.18] brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.15)]"
+                  sizes="(max-width: 768px) 190px, 210px"
+                  className="object-contain object-center p-1.5 brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]"
                 />
               </div>
               <p className="mt-4 text-gray-300 leading-relaxed max-w-md">

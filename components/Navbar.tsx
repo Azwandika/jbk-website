@@ -33,14 +33,14 @@ export default function Navbar(){
     }`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-3 group min-w-0 shrink-0">
-          <div className="transition-transform duration-300 group-hover:scale-105 w-[110px] h-10 sm:w-[130px] sm:h-11 md:w-[150px] md:h-12 lg:w-[170px] lg:h-14 overflow-hidden rounded-lg bg-white/40">
+          <div className="transition-transform duration-300 group-hover:scale-105 w-[130px] h-14 sm:w-[150px] sm:h-16 md:w-[170px] md:h-[72px] lg:w-[190px] lg:h-20 overflow-hidden rounded-lg">
             <Image
               src="/images/logo_baru.png"
               alt="SJB Kontraktor"
               fill
               priority
-              sizes="(max-width: 768px) 130px, 170px"
-              className="object-cover object-center -my-[8%] scale-[1.18]"
+              sizes="(max-width: 768px) 150px, 190px"
+              className="object-contain object-center p-1"
             />
           </div>
         </Link>
