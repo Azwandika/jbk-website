@@ -34,7 +34,7 @@ export default function Navbar(){
       <div className="container flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-3 group">
           <div className="transition-transform duration-300 group-hover:scale-105">
-            <Image src="/images/logo.svg" alt="JBK" width={150} height={45} priority />
+            <Image src="/images/logo_baru.png" alt="SJB Kontraktor" width={170} height={52} priority className="object-contain" />
           </div>
         </Link>
 

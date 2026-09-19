@@ -6,7 +6,11 @@ import WhatsAppButton from '../components/WhatsAppButton'
 
 export const metadata = {
   title: 'Sulistyo Jaya Baru (SJB) Kontraktor | Jasa Bangun & Renovasi Rumah di Colomadu, Karanganyar',
-  description: 'Jasa bangun rumah, renovasi, dan pengawasan proyek di Colomadu, Karanganyar, Solo dan sekitarnya. Profesional, tepat waktu, dan transparan.'
+  description: 'Jasa bangun rumah, renovasi, dan pengawasan proyek di Colomadu, Karanganyar, Solo dan sekitarnya. Profesional, tepat waktu, dan transparan.',
+  icons: {
+    icon: '/images/logo_baru.png',
+    apple: '/images/logo_baru.png',
+  },
 }
 
 export default function RootLayout({children}:{children:ReactNode}){
