@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 400 120">
+  <rect width="400" height="120" fill="#FFFFFF"/>
+  <g>
+    <polygon points="30,80 80,30 130,80" fill="#E30613"/>
+    <text x="150" y="70" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#1A1A1A">JBK</text>
+    <text x="150" y="98" font-family="Arial" font-size="12" fill="#8B1A1A">JAYA BERKAH KONTRAKTOR</text>
+  </g>
+</svg>

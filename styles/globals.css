@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --jbk-red: #E30613;
+  --jbk-dark: #8B1A1A;
+  --jbk-black: #1A1A1A;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html,body,#__next{height:100%;}
+body{@apply bg-white text-jbk-black leading-relaxed font-sans antialiased;}
+
+.container{max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+
+::selection{
+  background-color: rgba(227,6,19,0.15);
+  color: #8B1A1A;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #f8f8f8;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, #E30613, #8B1A1A);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #8B1A1A;
+}
+
+@layer utilities{
+  .reveal-hidden{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-hidden-left{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-hidden-right{
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-hidden-scale{
+    opacity: 0;
+    transform: scale(0.92);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-visible{
+    opacity: 1 !important;
+    transform: translate(0,0) scale(1) !important;
+  }
+
+  .delay-100{ transition-delay: 100ms; }
+  .delay-200{ transition-delay: 200ms; }
+  .delay-300{ transition-delay: 300ms; }
+  .delay-400{ transition-delay: 400ms; }
+  .delay-500{ transition-delay: 500ms; }
+  .delay-600{ transition-delay: 600ms; }
+  .delay-700{ transition-delay: 700ms; }
+  .delay-800{ transition-delay: 800ms; }
+
+  .text-balance{
+    text-wrap: balance;
+  }
+
+  .gradient-text{
+    background: linear-gradient(135deg, #E30613 0%, #FF3B47 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-lift{
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .card-lift:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+  }
+
+  .btn-primary{
+    @apply bg-jbk-gradient text-white px-6 py-3 rounded-xl font-semibold shadow-jbk transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+  }
+  .btn-outline{
+    @apply border-2 border-jbk-red text-jbk-red px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:bg-jbk-red hover:text-white hover:shadow-jbk active:translate-y-0;
+  }
+
+  .section-padding{
+    @apply py-20 md:py-28;
+  }
+
+  .heading-xl{
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+  .heading-lg{
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+  .heading-md{
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  .progress-bar-fill{
+    transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .wa-pulse::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: rgba(227,6,19,0.5);
+    animation: pulse-ring 1.8s cubic-bezier(0.4,0,0.6,1) infinite;
+    z-index: -1;
+  }
+}
+
+@layer components{
+  .nav-link{
+    @apply relative text-sm font-medium text-gray-700 hover:text-jbk-red transition-colors duration-200;
+  }
+  .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #E30613, #FF3B47);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-link:hover::after{
+    width: 100%;
+  }
+}
