@@ -38,22 +38,22 @@ const SOCIALS = [
 
 export default function Footer(){
   return (
-    <footer className="relative overflow-hidden bg-dark-gradient text-white pt-20 pb-8 mt-20">
+    <footer className="relative overflow-hidden bg-dark-gradient text-white pt-16 sm:pt-20 pb-6 sm:pb-8 mt-16 sm:mt-20">
       <div className="absolute inset-0 pointer-events-none opacity-30">
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-jbk-red rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative container">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           <div className="lg:col-span-2">
-            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 backdrop-blur-sm">
-              <div className="relative w-[170px] h-16 sm:w-[190px] sm:h-[72px] md:w-[210px] md:h-20 overflow-hidden rounded-xl bg-white/10">
+            <div className="bg-white/5 rounded-2xl p-5 sm:p-6 border border-white/10 backdrop-blur-sm">
+              <div className="relative w-[150px] h-[56px] sm:w-[180px] sm:h-[64px] md:w-[210px] md:h-[76px] flex items-center justify-center rounded-xl bg-white/10 overflow-hidden">
                 <Image
-                  src="/images/logo_baru.png"
+                  src="/images/logo.svg"
                   alt="SJB Kontraktor"
                   fill
-                  sizes="(max-width: 768px) 190px, 210px"
-                  className="object-contain object-center p-1.5 brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]"
+                  sizes="(max-width: 480px) 150px, (max-width: 768px) 180px, 210px"
+                  className="object-contain p-1.5 brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]"
                 />
               </div>
               <p className="mt-4 text-gray-300 leading-relaxed max-w-md">
@@ -170,13 +170,13 @@ export default function Footer(){
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-gray-400">
+        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left" style={{paddingBottom:'max(env(safe-area-inset-bottom), 0px)'}}>
+          <div className="text-xs sm:text-sm text-gray-400">
             © {new Date().getFullYear()} Sulistyo Jaya Baru (SJB) Kontraktor. All rights reserved.
           </div>
-          <div className="flex items-center gap-2 text-sm text-gray-500">
+          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500">
             <span>Dibuat dengan</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E30613">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#E30613" className="shrink-0">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
             </svg>
             <span>di Colomadu, Karanganyar</span>

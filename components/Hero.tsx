@@ -77,13 +77,13 @@ export default function Hero(){
             <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
               <div className="relative animate-float">
                 <div className="absolute -inset-4 bg-gradient-to-br from-jbk-red/15 to-transparent rounded-[2.5rem] blur-2xl pointer-events-none"></div>
-                <div className="relative rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-20px_rgba(227,6,19,0.3)] ring-1 ring-white/60">
+                <div className="relative rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-20px_rgba(227,6,19,0.3)] ring-1 ring-white/60 aspect-[4/3] w-full">
                   <Image
-                    src="/images/project-hook-2lt.svg"
+                    src="/images/5.png"
                     alt="Proyek Rumah JBK"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover"
+                    fill
+                    sizes="(max-width: 768px) 90vw, 50vw"
+                    className="w-full h-full object-cover"
                     priority
                   />
                 </div>

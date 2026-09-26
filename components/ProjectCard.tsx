@@ -44,10 +44,10 @@ export default function ProjectCard({ title, location, image, progress, date, de
   return (
     <div
       ref={ref}
-      className="group rounded-2xl bg-white shadow-card card-lift overflow-hidden border border-gray-100"
+      className="group rounded-2xl bg-white shadow-card card-lift overflow-hidden border border-gray-100 w-full h-full flex flex-col"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+      <div className="relative w-full aspect-[4/3] shrink-0 overflow-hidden">
         {!imgLoaded && (
           <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 animate-shimmer" style={{ backgroundSize: '200% 100%' }}></div>
         )}
@@ -55,7 +55,7 @@ export default function ProjectCard({ title, location, image, progress, date, de
           src={image}
           alt={title}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className={`object-cover transition-all duration-700 group-hover:scale-110 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImgLoaded(true)}
         />

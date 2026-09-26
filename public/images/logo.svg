@@ -1,8 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 400 120">
-  <rect width="400" height="120" fill="#FFFFFF"/>
-  <g>
-    <polygon points="30,80 80,30 130,80" fill="#E30613"/>
-    <text x="150" y="70" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#1A1A1A">JBK</text>
-    <text x="150" y="98" font-family="Arial" font-size="12" fill="#8B1A1A">JAYA BERKAH KONTRAKTOR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+  <defs>
+    <linearGradient id="jbkred" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E30613"/>
+      <stop offset="100%" stop-color="#FF3B47"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0, 2)">
+    <g transform="translate(2, 0)">
+      <path d="M0 50 L32 22 L64 50 L60 53 L32 30 L4 53 Z" fill="url(#jbkred)"/>
+      <path d="M34 36 L44 28 L54 36 L54 50 L34 50 Z" fill="#1A1A1A"/>
+      <rect x="38" y="38" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="45" y="38" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="38" y="45" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="45" y="45" width="4" height="5" fill="#FFFFFF"/>
+      <path d="M56 22 L88 50 L84 53 L56 30 Z" fill="url(#jbkred)"/>
+      <path d="M78 36 L88 28 L98 36 L98 50 L78 50 Z" fill="#1A1A1A"/>
+      <rect x="82" y="38" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="89" y="38" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="82" y="45" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="89" y="45" width="4" height="5" fill="#FFFFFF"/>
+      <rect x="18" y="40" width="10" height="10" fill="#1A1A1A"/>
+      <path d="M18 32 L28 32 L28 40 L18 40 L18 32 Z" fill="#1A1A1A"/>
+      <path d="M22 32 L22 28 Q22 26 24 26 Q26 26 26 28 L26 32 Z" fill="#1A1A1A"/>
+    </g>
+    <text x="112" y="78" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="72" font-weight="900" fill="#1A1A1A" letter-spacing="-2">JB</text>
+    <text x="272" y="78" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="72" font-weight="900" fill="url(#jbkred)" letter-spacing="-2">K</text>
+    <text x="112" y="108" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="16" font-weight="700" fill="#1A1A1A" letter-spacing="6">JAYA BERKAH</text>
+    <rect x="110" y="112" width="250" height="20" rx="3" fill="url(#jbkred)"/>
+    <text x="118" y="128" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="15" font-weight="900" fill="#FFFFFF" letter-spacing="8">KONTRAKTOR</text>
   </g>
 </svg>

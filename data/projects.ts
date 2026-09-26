@@ -12,7 +12,7 @@ export const projects: Project[] = [
     id: 'p1',
     title: 'Rumah tipe hook 2 lantai, atap limasan',
     location: 'Colomadu, Karanganyar',
-    image: '/images/project-hook-2lt.svg',
+    image: '/images/1.png',
     progress: 99,
     date: '2026-07-10'
   },
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     id: 'p2',
     title: 'Rumah dengan carport & teras klasik',
     location: 'Colomadu, Karanganyar',
-    image: '/images/project-classic-teras.svg',
+    image: '/images/2.png',
     progress: 99,
     date: '2026-06-20'
   },
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     id: 'p3',
     title: 'Renovasi atap & pengecoran lantai 2',
     location: 'Gedongan, Colomadu',
-    image: '/images/project-renovasi-atap.svg',
+    image: '/images/3.png',
     progress: 85,
     date: '2026-05-12'
   },
@@ -36,8 +36,16 @@ export const projects: Project[] = [
     id: 'p4',
     title: 'Rumah ruko 3 lantai bergaya modern',
     location: 'Solo, Jawa Tengah',
-    image: '/images/project-ruko-3lt.svg',
+    image: '/images/4.png',
     progress: 92,
     date: '2026-04-01'
+  },
+  {
+    id: 'p5',
+    title: 'Rumah tinggal 1 lantai dengan taman luas',
+    location: 'Karanganyar, Jawa Tengah',
+    image: '/images/5.png',
+    progress: 100,
+    date: '2026-03-15'
   }
 ]
