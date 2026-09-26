@@ -7,7 +7,7 @@ const stats = [
   { value: '100+', label: 'Proyek Selesai' },
   { value: '10+', label: 'Tahun Pengalaman' },
   { value: '50+', label: 'Klien Puas' },
-  { value: '3', label: 'Wilayah Layanan' },
+  { value: '2 Prop+', label: 'Jateng & Jatim' },
 ]
 
 const values = [
@@ -156,7 +156,7 @@ export default function Tentang(){
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">Visi Kami</h2>
                   <p className="text-white/90 text-lg leading-relaxed">
-                    Menjadi kontraktor unggulan yang menghadirkan hunian dan bangunan berkualitas, nyaman, dan terjangkau untuk keluarga Indonesia, serta dipercaya sebagai mitra konstruksi terbaik di wilayah Jawa Tengah dan Yogyakarta.
+                    Menjadi kontraktor unggulan yang menghadirkan hunian dan bangunan berkualitas, nyaman, dan terjangkau untuk keluarga Indonesia, serta dipercaya sebagai mitra konstruksi terbaik di wilayah Jawa Tengah, Jawa Timur (khususnya Ngawi dan sekitarnya), dan fleksibel untuk seluruh wilayah Indonesia sesuai kebutuhan klien.
                   </p>
                 </div>
               </div>

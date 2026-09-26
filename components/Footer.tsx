@@ -47,12 +47,12 @@ export default function Footer(){
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           <div className="lg:col-span-2">
             <div className="bg-white/5 rounded-2xl p-5 sm:p-6 border border-white/10 backdrop-blur-sm">
-              <div className="relative w-[160px] h-[60px] sm:w-[200px] sm:h-[72px] md:w-[230px] md:h-[82px] flex items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_-5px_rgba(0,0,0,0.3)] overflow-hidden ring-1 ring-white/50">
+              <div className="relative w-[170px] h-[64px] sm:w-[220px] sm:h-[80px] md:w-[260px] md:h-[92px] flex items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_-5px_rgba(0,0,0,0.3)] overflow-hidden ring-1 ring-white/50">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo_baru.png"
                   alt="SJB Kontraktor"
                   fill
-                  sizes="(max-width: 480px) 160px, (max-width: 768px) 200px, 230px"
+                  sizes="(max-width: 480px) 170px, (max-width: 768px) 220px, 260px"
                   className="object-contain p-2 sm:p-2.5"
                 />
               </div>
@@ -100,6 +100,7 @@ export default function Footer(){
                 { href: '/layanan', label: 'Layanan' },
                 { href: '/portofolio', label: 'Portofolio' },
                 { href: '/tentang', label: 'Tentang Kami' },
+                { href: '/testimoni', label: 'Testimoni' },
                 { href: '/kontak', label: 'Kontak' },
               ].map(item => (
                 <li key={item.href}>

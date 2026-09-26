@@ -19,7 +19,7 @@ export default function Hero(){
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-jbk-red opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-jbk-red"></span>
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-jbk-dark truncate max-w-full">Melayani <strong>se-Jawa Tengah</strong> & <strong>Ngawi (Jatim)</strong> · Fleksibel semua wilayah</span>
+                <span className="text-xs sm:text-sm font-semibold text-jbk-dark truncate max-w-full">Melayani <strong>Jawa Tengah</strong>, <strong>Jawa Timur (Ngawi)</strong> · Fleksibel sesuai kebutuhan klien</span>
               </div>
 
               <h1 className="heading-xl text-balance leading-[1.1]">

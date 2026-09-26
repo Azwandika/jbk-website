@@ -44,13 +44,13 @@ export default function Navbar(){
         <Link href="/" className="flex items-center justify-start shrink-0 relative z-10 mr-auto" aria-label="Beranda SJB Kontraktor">
           <div className="transition-transform duration-300 hover:scale-[1.03] active:scale-[0.98] flex items-center justify-start">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo_baru.png"
               alt="SJB Kontraktor - Jaya Berkah Kontraktor"
               width={400}
               height={140}
               priority
-              sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 200px, 220px"
-              className="w-[128px] sm:w-[150px] md:w-[180px] lg:w-[210px] xl:w-[220px] h-auto max-h-[52px] sm:max-h-[56px] md:max-h-[64px] lg:max-h-[72px] object-contain object-left select-none"
+              sizes="(max-width: 480px) 150px, (max-width: 768px) 180px, (max-width: 1024px) 220px, 260px"
+              className="w-[140px] sm:w-[170px] md:w-[200px] lg:w-[240px] xl:w-[260px] h-auto max-h-[56px] sm:max-h-[60px] md:max-h-[68px] lg:max-h-[76px] object-contain object-left select-none"
               draggable={false}
             />
           </div>
@@ -68,6 +68,9 @@ export default function Navbar(){
           </Link>
           <Link href="/tentang" className={`nav-link ${isActive('/tentang') ? 'text-jbk-red after:w-full' : ''}`}>
             Tentang
+          </Link>
+          <Link href="/testimoni" className={`nav-link ${isActive('/testimoni') ? 'text-jbk-red after:w-full' : ''}`}>
+            Testimoni
           </Link>
           <Link href="/kontak" className={`nav-link ${isActive('/kontak') ? 'text-jbk-red after:w-full' : ''}`}>
             Kontak
@@ -107,6 +110,7 @@ export default function Navbar(){
               { href: '/layanan', label: 'Layanan' },
               { href: '/portofolio', label: 'Portofolio' },
               { href: '/tentang', label: 'Tentang' },
+              { href: '/testimoni', label: 'Testimoni' },
               { href: '/kontak', label: 'Kontak' },
             ].map((item, i) => (
               <Link
