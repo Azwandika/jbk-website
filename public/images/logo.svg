@@ -1,32 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" width="420" height="150" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="jbkred" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E30613"/>
-      <stop offset="100%" stop-color="#FF3B47"/>
+    <linearGradient id="jbkredgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F03A47"/>
+      <stop offset="55%" stop-color="#E30613"/>
+      <stop offset="100%" stop-color="#C20510"/>
+    </linearGradient>
+    <linearGradient id="jbkroof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF5B66"/>
+      <stop offset="100%" stop-color="#E30613"/>
     </linearGradient>
   </defs>
-  <g transform="translate(0, 2)">
+  <g transform="translate(0, 3)">
     <g transform="translate(2, 0)">
-      <path d="M0 50 L32 22 L64 50 L60 53 L32 30 L4 53 Z" fill="url(#jbkred)"/>
-      <path d="M34 36 L44 28 L54 36 L54 50 L34 50 Z" fill="#1A1A1A"/>
-      <rect x="38" y="38" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="45" y="38" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="38" y="45" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="45" y="45" width="4" height="5" fill="#FFFFFF"/>
-      <path d="M56 22 L88 50 L84 53 L56 30 Z" fill="url(#jbkred)"/>
-      <path d="M78 36 L88 28 L98 36 L98 50 L78 50 Z" fill="#1A1A1A"/>
-      <rect x="82" y="38" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="89" y="38" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="82" y="45" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="89" y="45" width="4" height="5" fill="#FFFFFF"/>
-      <rect x="18" y="40" width="10" height="10" fill="#1A1A1A"/>
-      <path d="M18 32 L28 32 L28 40 L18 40 L18 32 Z" fill="#1A1A1A"/>
-      <path d="M22 32 L22 28 Q22 26 24 26 Q26 26 26 28 L26 32 Z" fill="#1A1A1A"/>
+      <path d="M-2 56 L34 20 L70 56 L66 59 L34 29 L2 59 Z" fill="url(#jbkroof)"/>
+      <path d="M35 40 L47 31 L58 40 L58 56 L35 56 Z" fill="#1a1a1a"/>
+      <g fill="#ffffff">
+        <rect x="39" y="43" width="4.2" height="4.2"/>
+        <rect x="46.8" y="43" width="4.2" height="4.2"/>
+        <rect x="39" y="49.8" width="4.2" height="4.2"/>
+        <rect x="46.8" y="49.8" width="4.2" height="4.2"/>
+      </g>
+      <path d="M62 20 L98 56 L94 59 L62 29 Z" fill="url(#jbkroof)"/>
+      <path d="M85 40 L97 31 L109 40 L109 56 L85 56 Z" fill="#1a1a1a"/>
+      <g fill="#ffffff">
+        <rect x="89" y="43" width="4.2" height="4.2"/>
+        <rect x="96.8" y="43" width="4.2" height="4.2"/>
+        <rect x="89" y="49.8" width="4.2" height="4.2"/>
+        <rect x="96.8" y="49.8" width="4.2" height="4.2"/>
+      </g>
+      <rect x="19" y="44" width="11.5" height="11.5" fill="#1a1a1a"/>
+      <rect x="19" y="36" width="11.5" height="8" fill="#1a1a1a"/>
+      <path d="M22.8 36 Q24.6 32 24.6 32 Q26.4 32 26.4 36 L26.4 36 Z" fill="#1a1a1a"/>
     </g>
-    <text x="112" y="78" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="72" font-weight="900" fill="#1A1A1A" letter-spacing="-2">JB</text>
-    <text x="272" y="78" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="72" font-weight="900" fill="url(#jbkred)" letter-spacing="-2">K</text>
-    <text x="112" y="108" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="16" font-weight="700" fill="#1A1A1A" letter-spacing="6">JAYA BERKAH</text>
-    <rect x="110" y="112" width="250" height="20" rx="3" fill="url(#jbkred)"/>
-    <text x="118" y="128" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="15" font-weight="900" fill="#FFFFFF" letter-spacing="8">KONTRAKTOR</text>
+
+    <text x="124" y="86" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="80" font-weight="900" fill="#111111" letter-spacing="-3">SJ</text>
+    <text x="295" y="86" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="80" font-weight="900" fill="url(#jbkredgrad)" letter-spacing="-3">B</text>
+
+    <g transform="translate(0, 0)">
+      <text x="124" y="114" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="15" font-weight="800" fill="#111111" letter-spacing="6.5">SULISTYO JAYA</text>
+      <rect x="122" y="119" width="272" height="22" rx="4" fill="url(#jbkredgrad)"/>
+      <text x="142" y="136" font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="15" font-weight="900" fill="#ffffff" letter-spacing="8">KONTRAKTOR</text>
+    </g>
   </g>
 </svg>

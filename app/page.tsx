@@ -1,9 +1,11 @@
 import Hero from '../components/Hero'
 import ServiceCard from '../components/ServiceCard'
 import ProjectCard from '../components/ProjectCard'
+import TestimonialCard from '../components/TestimonialCard'
 import RevealOnScroll from '../components/RevealOnScroll'
 import { services } from '../data/services'
 import { projects } from '../data/projects'
+import { testimonials } from '../data/testimonials'
 
 export const dynamic = 'force-static'
 
@@ -113,7 +115,7 @@ export default function Home(){
             </div>
           </RevealOnScroll>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-5 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-6">
             {projects.map((p, i) => (
               <RevealOnScroll key={p.id} variant="up" delay={i * 120}>
                 <ProjectCard
@@ -122,6 +124,7 @@ export default function Home(){
                   image={p.image}
                   progress={p.progress}
                   date={p.date}
+                  waCatalogUrl={p.waCatalogUrl}
                   delay={i * 60}
                 />
               </RevealOnScroll>
@@ -160,6 +163,35 @@ export default function Home(){
                     {item.desc}
                   </p>
                 </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-jbk-gray/50 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 right-10 w-[400px] h-[400px] bg-jbk-red/5 rounded-full blur-3xl"></div>
+        </div>
+        <div className="container relative">
+          <RevealOnScroll>
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-jbk-red/10 text-jbk-dark text-sm font-semibold mb-4">
+                💬 Testimoni Klien
+              </div>
+              <h2 className="heading-lg text-balance">
+                Kata <span className="gradient-text">Mereka</span> Tentang Kami
+              </h2>
+              <p className="mt-4 text-gray-600 text-lg">
+                Kisah nyata dari klien yang telah mempercayakan proyek mereka kepada kami.
+              </p>
+            </div>
+          </RevealOnScroll>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+            {testimonials.map((t, i) => (
+              <RevealOnScroll key={t.id} variant="up" delay={i * 100}>
+                <TestimonialCard t={t} delay={i * 60} />
               </RevealOnScroll>
             ))}
           </div>

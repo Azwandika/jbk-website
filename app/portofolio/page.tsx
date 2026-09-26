@@ -66,7 +66,7 @@ export default function Portofolio(){
             </div>
           </RevealOnScroll>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-6 lg:gap-7">
             {sorted.map((p, i) => (
               <RevealOnScroll key={p.id} variant="up" delay={i * 80}>
                 <ProjectCard
@@ -75,6 +75,7 @@ export default function Portofolio(){
                   image={p.image}
                   progress={p.progress}
                   date={p.date}
+                  waCatalogUrl={p.waCatalogUrl}
                   delay={i * 40}
                 />
               </RevealOnScroll>

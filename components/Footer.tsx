@@ -47,18 +47,17 @@ export default function Footer(){
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           <div className="lg:col-span-2">
             <div className="bg-white/5 rounded-2xl p-5 sm:p-6 border border-white/10 backdrop-blur-sm">
-              <div className="relative w-[150px] h-[56px] sm:w-[180px] sm:h-[64px] md:w-[210px] md:h-[76px] flex items-center justify-center rounded-xl bg-white/10 overflow-hidden">
+              <div className="relative w-[160px] h-[60px] sm:w-[200px] sm:h-[72px] md:w-[230px] md:h-[82px] flex items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_-5px_rgba(0,0,0,0.3)] overflow-hidden ring-1 ring-white/50">
                 <Image
                   src="/images/logo.svg"
                   alt="SJB Kontraktor"
                   fill
-                  sizes="(max-width: 480px) 150px, (max-width: 768px) 180px, 210px"
-                  className="object-contain p-1.5 brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]"
+                  sizes="(max-width: 480px) 160px, (max-width: 768px) 200px, 230px"
+                  className="object-contain p-2 sm:p-2.5"
                 />
               </div>
-              <p className="mt-4 text-gray-300 leading-relaxed max-w-md">
-                <strong>Sulistyo Jaya Baru (SJB) Kontraktor</strong> — perusahaan kontraktor terpercaya yang spesialis dalam
-                pembangunan rumah tinggal, renovasi, dan pengawasan proyek di wilayah Colomadu, Karanganyar, Solo dan sekitarnya.
+              <p className="mt-5 text-gray-300 leading-relaxed max-w-md">
+                <strong>Sulistyo Jaya Baru (SJB) Kontraktor</strong> — perusahaan kontraktor terpercaya spesialis pembangunan rumah tinggal, renovasi, dan pengawasan proyek. Melayani seluruh <strong>Jawa Tengah</strong> dan <strong>Jawa Timur (Ngawi & sekitarnya)</strong>, fleksibel untuk wilayah mana saja sesuai kebutuhan klien.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a

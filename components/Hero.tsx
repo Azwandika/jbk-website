@@ -14,12 +14,12 @@ export default function Hero(){
         <div className="container grid md:grid-cols-2 gap-10 lg:gap-16 items-center py-16 md:py-24">
           <RevealOnScroll variant="left" delay={100}>
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-jbk-red/10 border border-jbk-red/15 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-jbk-red/10 border border-jbk-red/15 backdrop-blur-sm max-w-full">
+                <span className="relative flex h-2 w-2 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-jbk-red opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-jbk-red"></span>
                 </span>
-                <span className="text-sm font-semibold text-jbk-dark">Melayani Colomadu, Karanganyar & Sekitarnya</span>
+                <span className="text-xs sm:text-sm font-semibold text-jbk-dark truncate max-w-full">Melayani <strong>se-Jawa Tengah</strong> & <strong>Ngawi (Jatim)</strong> · Fleksibel semua wilayah</span>
               </div>
 
               <h1 className="heading-xl text-balance leading-[1.1]">
