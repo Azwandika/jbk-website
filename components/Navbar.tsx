@@ -102,8 +102,8 @@ export default function Navbar(){
         </button>
       </div>
 
-      <div className={`lg:hidden fixed inset-x-0 bottom-0 bg-white z-[60] overflow-hidden transition-[opacity,transform,visibility] duration-300 ease-out ${open ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-4 pointer-events-none'}`} style={{top: 'clamp(60px, 8vw, 80px)', WebkitTransform: 'translateZ(0)'}}>
-        <div className="h-full overflow-y-auto px-4 py-4 sm:px-5 sm:py-6 bg-white" style={{paddingBottom:'max(env(safe-area-inset-bottom), 1rem)'}}>
+      <div className={`lg:hidden fixed inset-x-0 bottom-0 top-[clamp(60px,8vw,80px)] bg-white z-[999] overflow-hidden transition-[opacity,visibility] duration-300 ease-out ${open ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`} style={{backgroundColor:'#ffffff',backdropFilter:'none',WebkitBackdropFilter:'none',willChange:'opacity'}}>
+        <div className="h-full w-full overflow-y-auto px-4 py-4 sm:px-5 sm:py-6 bg-white" style={{backgroundColor:'#ffffff',paddingBottom:'calc(max(env(safe-area-inset-bottom), 1rem) + 5rem)'}}>
           <div className="flex flex-col gap-1">
             {[
               { href: '/', label: 'Beranda' },

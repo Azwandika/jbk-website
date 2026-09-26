@@ -116,12 +116,12 @@ export default function Kontak(){
           </div>
 
           <div className="grid md:grid-cols-5 gap-6 md:gap-8 mb-16">
-            <RevealOnScroll variant="left" className="md:col-span-2">
-              <div className="h-full bg-gradient-to-br from-jbk-red to-jbk-accent rounded-3xl p-8 md:p-10 text-white shadow-jbk relative overflow-hidden">
+            <RevealOnScroll variant="left" className="md:col-span-2 min-w-0">
+              <div className="h-full bg-gradient-to-br from-jbk-red to-jbk-accent rounded-2xl md:rounded-3xl p-6 md:p-10 text-white shadow-jbk relative overflow-hidden min-w-0" style={{paddingBottom:'calc(1rem + max(env(safe-area-inset-bottom), 0px))'}}>
                 <div className="absolute inset-0 pointer-events-none opacity-20">
                   <div className="absolute -top-20 -right-20 w-80 h-80 bg-white rounded-full blur-3xl"></div>
                 </div>
-                <div className="relative">
+                <div className="relative min-w-0 w-full">
                   <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur flex items-center justify-center mb-6">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -152,16 +152,16 @@ export default function Kontak(){
                       <div className="text-white/70 text-sm font-medium mb-2">
                         📍 Wilayah Layanan
                       </div>
-                      <div className="flex flex-wrap gap-2">
-                        {['Seluruh Jawa Tengah', 'Ngawi (Jawa Timur)', 'Colomadu', 'Karanganyar', 'Solo', 'Sukoharjo', 'Boyolali', 'Klaten', 'Fleksibel sesuai kebutuhan klien'].map(w => (
-                          <span key={w} className="px-3 py-1.5 bg-white/10 rounded-full text-xs font-medium border border-white/10">
+                      <div className="flex flex-wrap gap-2 w-full min-w-0" style={{display:'flex',flexWrap:'wrap'}}>
+                        {['Seluruh Jateng', 'Ngawi (Jatim)', 'Colomadu', 'Karanganyar', 'Solo', 'Sukoharjo', 'Boyolali', 'Klaten', 'Fleksibel sesuai klien'].map(w => (
+                          <span key={w} className="px-2.5 py-1.5 bg-white/10 rounded-full text-[11px] sm:text-xs font-medium border border-white/10 shrink-0">
                             {w}
                           </span>
                         ))}
                       </div>
                     </div>
 
-                    <div className="pt-4 border-t border-white/20">
+                    <div className="pt-4 border-t border-white/20 pb-16 sm:pb-4 pr-14 sm:pr-0">
                       <div className="text-white/70 text-sm font-medium mb-2 flex items-center gap-2">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                           <circle cx="12" cy="12" r="10"/>
@@ -170,17 +170,17 @@ export default function Kontak(){
                         Jam Kerja
                       </div>
                       <div className="space-y-1">
-                        <div className="flex justify-between text-white/90">
+                        <div className="flex justify-between text-white/90 gap-2">
                           <span>Senin - Jumat</span>
-                          <span className="font-semibold">08:00 - 17:00</span>
+                          <span className="font-semibold whitespace-nowrap">08:00 - 17:00</span>
                         </div>
-                        <div className="flex justify-between text-white/90">
+                        <div className="flex justify-between text-white/90 gap-2">
                           <span>Sabtu</span>
-                          <span className="font-semibold">08:00 - 14:00</span>
+                          <span className="font-semibold whitespace-nowrap">08:00 - 14:00</span>
                         </div>
-                        <div className="flex justify-between text-white/60">
+                        <div className="flex justify-between text-white/60 gap-2">
                           <span>Minggu</span>
-                          <span className="font-medium">Tutup</span>
+                          <span className="font-medium whitespace-nowrap">Tutup</span>
                         </div>
                       </div>
                     </div>
@@ -204,9 +204,9 @@ export default function Kontak(){
               </div>
             </RevealOnScroll>
 
-            <RevealOnScroll variant="right" delay={150} className="md:col-span-3">
-              <div className="h-full rounded-3xl overflow-hidden shadow-card-hover border border-gray-100">
-                <div className="aspect-[4/3] md:aspect-auto md:h-full min-h-[400px] bg-gray-100">
+            <RevealOnScroll variant="right" delay={150} className="md:col-span-3 min-w-0">
+              <div className="h-full rounded-2xl md:rounded-3xl overflow-hidden shadow-card-hover border border-gray-100 bg-gray-100">
+                <div className="aspect-[4/3] md:aspect-auto md:h-full min-h-[320px] sm:min-h-[400px]">
                   <iframe
                     src="https://www.google.com/maps?q=Jl.+Al-Fatah+3,+Pepe,+Gedongan,+Kecamatan+Colomadu,+Kabupaten+Karanganyar,+Jawa+Tengah+57173&output=embed"
                     width="100%"
