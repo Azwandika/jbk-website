@@ -14,12 +14,12 @@ export default function Hero(){
         <div className="container grid md:grid-cols-2 gap-10 lg:gap-16 items-center py-16 md:py-24">
           <RevealOnScroll variant="left" delay={100}>
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-jbk-red/10 border border-jbk-red/15 backdrop-blur-sm max-w-full">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-jbk-red/10 border border-jbk-red/15 backdrop-blur-sm max-w-full min-w-0">
                 <span className="relative flex h-2 w-2 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-jbk-red opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-jbk-red"></span>
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-jbk-dark truncate max-w-full">Melayani <strong>Jawa Tengah</strong>, <strong>Jawa Timur (Ngawi)</strong> · Fleksibel sesuai kebutuhan klien</span>
+                <span className="text-[11px] sm:text-xs md:text-sm font-semibold text-jbk-dark truncate min-w-0">Melayani <strong>Jateng</strong>, <strong>Jatim (Ngawi)</strong> · Fleksibel sesuai kebutuhan klien</span>
               </div>
 
               <h1 className="heading-xl text-balance leading-[1.1]">
@@ -35,39 +35,39 @@ export default function Hero(){
                 <span className="block">Profesional, tepat waktu, dan transparan harga.</span>
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-wrap gap-3 pt-2">
                 <Link
                   href="/portofolio"
-                  className="group inline-flex items-center gap-2 bg-jbk-gradient text-white px-7 py-4 rounded-2xl font-semibold shadow-jbk transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:translate-y-0"
+                  className="group inline-flex items-center gap-2 bg-jbk-gradient text-white px-5 sm:px-7 py-3 sm:py-4 rounded-2xl font-semibold shadow-jbk transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:translate-y-0 text-sm sm:text-base min-w-0 shrink"
                 >
                   <span>Lihat Portofolio</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-1 shrink-0">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </Link>
                 <Link
                   href="/kontak"
-                  className="group inline-flex items-center gap-2 border-2 border-jbk-red text-jbk-red px-7 py-4 rounded-2xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-jbk-red hover:text-white hover:shadow-jbk active:translate-y-0"
+                  className="group inline-flex items-center gap-2 border-2 border-jbk-red text-jbk-red px-5 sm:px-7 py-3 sm:py-4 rounded-2xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-jbk-red hover:text-white hover:shadow-jbk active:translate-y-0 text-sm sm:text-base min-w-0 shrink"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
                   <span>Hubungi Kami</span>
                 </Link>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200/60">
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold gradient-text">100+</div>
-                  <div className="text-sm text-gray-500 mt-1">Proyek Selesai</div>
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-gray-200/60 pr-14 sm:pr-0">
+                <div className="min-w-0">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">100+</div>
+                  <div className="text-[11px] sm:text-sm text-gray-500 mt-1 truncate">Proyek Selesai</div>
                 </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold gradient-text">10+</div>
-                  <div className="text-sm text-gray-500 mt-1">Tahun Pengalaman</div>
+                <div className="min-w-0">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">10+</div>
+                  <div className="text-[11px] sm:text-sm text-gray-500 mt-1 truncate">Tahun Pengalaman</div>
                 </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold gradient-text">100%</div>
-                  <div className="text-sm text-gray-500 mt-1">Kepuasan</div>
+                <div className="min-w-0">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">100%</div>
+                  <div className="text-[11px] sm:text-sm text-gray-500 mt-1 truncate">Kepuasan</div>
                 </div>
               </div>
             </div>
